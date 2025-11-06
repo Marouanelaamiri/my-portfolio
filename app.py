@@ -4,8 +4,8 @@ from streamlit_lottie import st_lottie
 
 # --- PAGE CONFIG ---
 st.set_page_config(
-    page_title="Marouane Laamiri | Digital Portfolio",
-    page_icon="👋",
+    page_title="Marouane Laamiri | My Portfolio",
+    page_icon="/home/malaamir/Downloads/mali.svg",
     layout="wide",
 )
 
@@ -22,10 +22,10 @@ with st.container():
     col1, col2 = st.columns([0.6, 0.4])
 
     with col1:
-        st.title("Hi, I'm Marouane Laamiri 👋")
-        st.subheader("A passionate developer building cool things.")
+        st.title("Hi, I'm Marouane Laamiri ")
+        st.subheader("A 42 Network Student | Aspiring AI developer")
         st.write(
-            "I'm learning to build web applications with Python. "
+            "I'm learning to build web applications with Python, and other programming languages while integrating AI concepts into my projects. "
             "This portfolio is my first project using Streamlit!"
         )
         
@@ -48,7 +48,7 @@ with st.container():
         if lottie_coding:
             st_lottie(
                 lottie_coding,
-                speed=1,
+                speed=6,
                 reverse=False,
                 loop=True,
                 quality="high", # "low", "medium", "high"
@@ -66,11 +66,11 @@ st.divider() # Adds a horizontal line
 st.header("About Me")
 st.write(
     """
-    Hello! I am a developer with a passion for problem-solving and technology. 
-    I am currently focused on expanding my skills in Python for web development and data science. 
-    I enjoy turning complex problems into simple, beautiful, and intuitive solutions.
+    A computer science professional with acquired experience in computer hardware and OS maintenance, I have developed a strong background in computers and server setups as an IT technician within various local associations, and schools.
+	Furthermore, I am a computer technician who is dedicated to continually improving my skills and growing in the programming field. During my university studies in Ukraine, I developed a keen interest in programming and cloud computing, and I have pursued numerous training and certification programs, including AWS Certified Cloud Computing.
+	I would describe myself as a problem solver who is agile and results-oriented. I believe that my skills make me a valuable asset to the IT industry.
     
-    When I'm not coding, I enjoy [Your Hobby 1] and [Your Hobby 2].
+    When I'm not coding, Im asleep or playing video games.
     """
 )
 
@@ -81,26 +81,15 @@ st.header("My Projects")
 st.write("Here are a few projects I've been working on. You can find more on my GitHub.")
 
 # --- Project 1 ---
-st.subheader("Project 1: My Portfolio Website")
+st.subheader("Cub3D Fake 3D Game")
 st.write(
-    "The very website you are on right now! Built using Streamlit to "
-    "showcase my skills and projects in a reactive and responsive way."
+    "Cub3D is a simple 3D game engine project inspired by the classic game Wolfenstein 3D. "
+	"It is developed using the C programming language and utilizes the MiniLibX graphics library for rendering. "
+	"The project focuses on implementing raycasting techniques to create a 3D environment from a 2D map, allowing players to navigate through a maze-like structure. "
+	"Cub3D showcases fundamental concepts of computer graphics, game development, and low-level programming."
 )
-st.write("[View on GitHub](https://github.com/Marouanelaamiri/my-portfolio)") #<-- Update this link
+st.write("[View on GitHub](https://github.com/Marouanelaamiri/cub3D)") #<-- Update this link
 
-# --- Project 2 ---
-st.subheader("Project 2: [Your Project Name]")
-st.write(
-    "A short description of your project. What was the goal? What technologies did you use?"
-)
-st.write("[View on GitHub](https://github.com/Marouanelaamiri/YOUR-PROJECT-REPO)")
-
-# --- Project 3 ---
-st.subheader("Project 3: [Your Project Name]")
-st.write(
-    "A short description of your project. What was the goal? What technologies did you use?"
-)
-st.write("[View on GitHub](https://github.com/Marouanelaamiri/YOUR-PROJECT-REPO)")
 
 st.divider()
 
