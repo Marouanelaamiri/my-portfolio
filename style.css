@@ -6,7 +6,7 @@
 /*   By: malaamir <malaamir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/07 21:08:31 by malaamir          #+#    #+#             */
-/*   Updated: 2025/11/13 13:43:57 by malaamir         ###   ########.fr       */
+/*   Updated: 2025/11/13 13:46:52 by malaamir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,8 +100,8 @@ a {
 }
 /* --- NEW: Style for the pixel bat --- */
 .nav-pixel-bat {
-    width: 32px;  /* Set the width of your bat */
-    height: 32px; /* Set the height of your bat */
+    width: 24px;  /* <-- CHANGED */
+    height: 24px; /* <-- CHANGED */
     margin-right: 0.75rem; /* Space between bat and name */
     image-rendering: pixelated; /* Keeps the pixel art sharp */
 }
