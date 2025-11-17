@@ -6,6 +6,7 @@
     <title>About | Marouane Laamiri</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
     
     <script>
         tailwind.config = {
@@ -19,6 +20,7 @@
                     },
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
+                        pixel: ['"Press Start 2P"', 'cursive'], // New font for headers
                     }
                 }
             }
@@ -26,8 +28,7 @@
     </script>
     <style>
         body {
-            /* Updated to match your specific filename */
-            background-image: url('backgound.jpg');
+            background-image: url('1742570439211.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -38,7 +39,7 @@
 </head>
 <body class="text-white antialiased min-h-screen flex flex-col relative">
 
-    <div class="fixed inset-0 bg-black/50 -z-10"></div>
+    <div class="fixed inset-0 bg-black/60 -z-10"></div>
 
     <nav class="fixed w-full top-0 z-50 bg-nav/90 backdrop-blur-md border-b border-primary/30 shadow-lg">
         <div class="w-full px-4 sm:px-8 h-20 flex justify-between items-center">
@@ -56,27 +57,127 @@
         </div>
     </nav>
 
-    <main class="flex-grow container mx-auto px-6 pt-32 pb-20 max-w-4xl">
+    <main class="flex-grow container mx-auto px-6 pt-32 pb-20 max-w-5xl">
         
-        <section class="bg-nav/50 backdrop-blur-sm p-8 md:p-12 rounded-3xl border border-primary/20 shadow-2xl">
-            <h2 class="text-4xl font-bold mb-8 border-b-2 border-primary/50 pb-4 inline-block">About Me</h2>
+        <div class="bg-nav/60 backdrop-blur-md rounded-3xl border border-primary/30 shadow-2xl overflow-hidden">
             
-            <div class="space-y-6 text-lg text-gray-200 leading-relaxed">
-                <p>
-                    A computer science professional with acquired experience in computer hardware and OS maintenance, I have developed a strong background in computers and server setups as an IT technician within various local associations, and schools.
-                </p>
-                <p>
-                    Furthermore, I am a computer technician who is dedicated to continually improving my skills and growing in the programming field. During my university studies in Ukraine, I developed a keen interest in programming and cloud computing, and I have pursued numerous training and certification programs, including AWS Certified Cloud Computing.
-                </p>
-                <p>
-                    I would describe myself as a problem solver who is agile and results-oriented. I believe that my skills make me a valuable asset to the IT industry.
-                </p>
-                <p class="font-semibold text-secondary">
-                    When I'm not coding, I'm asleep or playing video games.
-                </p>
+            <div class="bg-gradient-to-r from-primary to-purple-800 p-6 text-center relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-20"></div>
+                <h2 class="text-2xl md:text-3xl font-pixel text-white drop-shadow-md relative z-10">PLAYER PROFILE</h2>
             </div>
-        </section>
 
+            <div class="p-8 md:p-12 grid grid-cols-1 lg:grid-cols-3 gap-12">
+                
+                <div class="space-y-8">
+                    <div class="relative mx-auto w-48 h-48 group">
+                        <div class="absolute inset-0 bg-primary rounded-full blur opacity-50 group-hover:opacity-80 transition duration-500"></div>
+                        <img src="https://raw.githubusercontent.com/Marouanelaamiri/my-portfolio/main/avatar.png" alt="Marouane" class="relative w-full h-full rounded-full border-4 border-white object-cover shadow-xl">
+                        <div class="absolute bottom-2 right-2 bg-green-500 w-6 h-6 rounded-full border-2 border-white" title="Online"></div>
+                    </div>
+
+                    <div class="text-center space-y-2 bg-black/30 p-4 rounded-xl border border-white/10">
+                        <h3 class="text-xl font-bold">Marouane Laamiri</h3>
+                        <p class="text-primary text-sm font-mono">Class: Technomancer</p>
+                        <p class="text-secondary text-sm font-mono">Level: 42 Student</p>
+                        <p class="text-gray-400 text-sm font-mono">Location: Morocco</p>
+                    </div>
+
+                    <div class="space-y-3">
+                        <h4 class="font-bold text-secondary border-b border-white/10 pb-2">Vitality Stats</h4>
+                        
+                        <div>
+                            <div class="flex justify-between text-xs mb-1">
+                                <span>Coffee Intake</span>
+                                <span class="text-primary">99%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-yellow-500 h-2 rounded-full" style="width: 99%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between text-xs mb-1">
+                                <span>Bugs Squashed</span>
+                                <span class="text-primary">8,432</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-red-500 h-2 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-xs mb-1">
+                                <span>Sleep</span>
+                                <span class="text-primary">Loading...</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-blue-500 h-2 rounded-full" style="width: 15%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-2 space-y-8">
+                    
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-4 flex items-center gap-2">
+                            <span class="text-2xl">📜</span> Biography
+                        </h3>
+                        <div class="bg-black/20 p-6 rounded-xl border border-white/5 text-gray-300 leading-relaxed space-y-4">
+                            <p>
+                                <span class="text-primary font-bold">Game Start:</span> My journey began as an IT Technician at <strong class="text-white">Kharkov National University</strong>, where I mastered the ancient art of "Have you tried turning it off and on again?" (It works 90% of the time).
+                            </p>
+                            <p>
+                                <span class="text-primary font-bold">Current Quest:</span> I am navigating the deep waters of the <strong class="text-white">42 Network</strong>. I'm grinding low-level C, battling memory leaks, and leveling up my algorithms to become an AI Developer.
+                            </p>
+                            <p>
+                                <span class="text-primary font-bold">Side Quests:</span> I freelance on <strong class="text-green-400">Fiverr</strong>, crafting creative video ads and designs. I believe a versatile developer is a dangerous (in a good way) developer.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-4 flex items-center gap-2">
+                            <span class="text-2xl">⚡</span> Skill Tree
+                        </h3>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                            <div class="bg-primary/10 border border-primary/30 p-3 rounded-lg text-center hover:bg-primary/30 transition">
+                                <span class="block text-xl mb-1">🐍</span>
+                                <span class="font-bold text-sm">Python</span>
+                            </div>
+                            <div class="bg-primary/10 border border-primary/30 p-3 rounded-lg text-center hover:bg-primary/30 transition">
+                                <span class="block text-xl mb-1">⚙️</span>
+                                <span class="font-bold text-sm">C Language</span>
+                            </div>
+                            <div class="bg-primary/10 border border-primary/30 p-3 rounded-lg text-center hover:bg-primary/30 transition">
+                                <span class="block text-xl mb-1">🐧</span>
+                                <span class="font-bold text-sm">Linux/Unix</span>
+                            </div>
+                            <div class="bg-primary/10 border border-primary/30 p-3 rounded-lg text-center hover:bg-primary/30 transition">
+                                <span class="block text-xl mb-1">🎨</span>
+                                <span class="font-bold text-sm">Video Editing</span>
+                            </div>
+                            <div class="bg-primary/10 border border-primary/30 p-3 rounded-lg text-center hover:bg-primary/30 transition">
+                                <span class="block text-xl mb-1">🐳</span>
+                                <span class="font-bold text-sm">Docker</span>
+                            </div>
+                            <div class="bg-primary/10 border border-primary/30 p-3 rounded-lg text-center hover:bg-primary/30 transition">
+                                <span class="block text-xl mb-1">🧠</span>
+                                <span class="font-bold text-sm">Problem Solving</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gradient-to-r from-primary/20 to-transparent p-4 rounded-lg border-l-4 border-primary">
+                        <p class="italic text-sm text-gray-300">
+                            <span class="font-bold text-primary">Fun Fact:</span> When I'm not coding or debugging a segfault, I'm likely recharging (sleeping) or carrying my team in video games.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
     </main>
 
 </body>
