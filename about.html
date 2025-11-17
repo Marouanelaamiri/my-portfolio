@@ -1,44 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About | Marouane Laamiri</title>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: '#0c001f',
+                        primary: '#6c42d3',
+                        secondary: '#b0a8d1',
+                        nav: '#1a013d',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-image: url('1742570439211.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .pixel-art { image-rendering: pixelated; }
+    </style>
 </head>
-<body>
+<body class="bg-dark text-white antialiased min-h-screen flex flex-col relative">
 
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="nav-logo">
-                <img src="bat-man.gif" alt="Pixel Bat" class="nav-pixel-bat">
-                Marouane Laamiri
+    <div class="fixed inset-0 bg-black/60 -z-10"></div>
+
+    <nav class="fixed w-full top-0 z-50 bg-nav/90 backdrop-blur-md border-b border-primary/30 shadow-lg">
+        <div class="w-full px-4 sm:px-8 h-20 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3 group">
+                <img src="bat-man.gif" alt="Pixel Bat" class="w-8 h-8 pixel-art group-hover:-translate-y-1 transition-transform duration-300">
+                <span class="text-xl font-bold tracking-tight group-hover:text-primary transition-colors">Marouane Laamiri</span>
             </a>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="about.html" class="nav-link active">About</a></li>
-                <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+            <ul class="flex gap-6 sm:gap-10 text-base font-medium text-gray-300">
+                <li><a href="index.html" class="hover:text-primary transition-colors">Home</a></li>
+                <li><a href="about.html" class="text-primary font-bold hover:text-primary transition-colors">About</a></li>
+                <li><a href="projects.html" class="hover:text-primary transition-colors">Projects</a></li>
             </ul>
         </div>
     </nav>
 
-    <div class="container">
+    <main class="flex-grow container mx-auto px-6 pt-32 pb-20 max-w-4xl">
         
-        <section class="about-me">
-            <h2>About Me</h2>
-            <p>
-                A computer science professional with acquired experience in computer hardware and OS maintenance, I have developed a strong background in computers and server setups as an IT technician within various local associations, and schools.
-            </p>
-            <p>
-                Furthermore, I am a computer technician who is dedicated to continually improving my skills and growing in the programming field. During my university studies in Ukraine, I developed a keen interest in programming and cloud computing, and I have pursued numerous training and certification programs, including AWS Certified Cloud Computing.
-            </p>
-            <p>
-                I would describe myself as a problem solver who is agile and results-oriented. I believe that my skills make me a valuable asset to the IT industry.
-            </p>
-            <p>
-                When I'm not coding, Im asleep or playing video games.
-            </p>
+        <section class="bg-nav/50 backdrop-blur-sm p-8 md:p-12 rounded-3xl border border-primary/20 shadow-2xl">
+            <h2 class="text-4xl font-bold mb-8 border-b-2 border-primary/50 pb-4 inline-block">About Me</h2>
+            
+            <div class="space-y-6 text-lg text-gray-200 leading-relaxed">
+                <p>
+                    A computer science professional with acquired experience in computer hardware and OS maintenance, I have developed a strong background in computers and server setups as an IT technician within various local associations, and schools.
+                </p>
+                <p>
+                    Furthermore, I am a computer technician who is dedicated to continually improving my skills and growing in the programming field. During my university studies in Ukraine, I developed a keen interest in programming and cloud computing, and I have pursued numerous training and certification programs, including AWS Certified Cloud Computing.
+                </p>
+                <p>
+                    I would describe myself as a problem solver who is agile and results-oriented. I believe that my skills make me a valuable asset to the IT industry.
+                </p>
+                <p class="font-semibold text-secondary">
+                    When I'm not coding, I'm asleep or playing video games.
+                </p>
+            </div>
         </section>
 
-    </div> </body>
+    </main>
+
+</body>
 </html>
