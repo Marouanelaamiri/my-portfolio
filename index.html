@@ -41,19 +41,25 @@
 	</script>
 
 	<style>
-		/* --- FIXED BACKGROUND --- */
+		/* --- OPTIMIZED BACKGROUND --- */
 		.bg-wallpaper {
-			background-image: url('background.jpg');
+			background-image: url('1742570439211.jpg');
 			background-size: cover;
 			background-position: center;
-			background-attachment: fixed;
+			/* CHANGED: Removed 'fixed' attachment. The div is already fixed. */
 			background-repeat: no-repeat;
+
+			/* PERFORMANCE FIXES */
 			position: fixed;
 			top: 0;
 			left: 0;
 			width: 100%;
 			height: 100%;
 			z-index: -2;
+
+			/* This forces the GPU to handle the image, reducing lag */
+			transform: translateZ(0);
+			will-change: transform;
 		}
 
 		/* Cursor blinking effect */
@@ -74,6 +80,11 @@
 			50% {
 				opacity: 0;
 			}
+		}
+
+		/* Ensure smooth scrolling for anchor links */
+		html {
+			scroll-behavior: smooth;
 		}
 	</style>
 </head>
